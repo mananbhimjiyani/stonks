@@ -41,6 +41,9 @@ forex_mapping = {
 }
 
 # Load the stock model
+@app.route("/")
+def helloworld():
+    return "Hello World!"
 
 @app.route('/predict', methods=['GET'])
 def predict():
