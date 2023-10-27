@@ -6,6 +6,8 @@ import yfinance as yf
 import nltk
 import numpy as np
 import warnings
+import sys
+print(sys.executable)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 nltk.download('vader_lexicon')
@@ -111,4 +113,7 @@ def predict_forex():
     return response
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    from gunicorn.app.wsgiapp import WSGIApplication
+    app_wsgi = WSGIApplication()
+    app_wsgi.app_uri = 'flaskapi:app'
+    app_wsgi.run()
