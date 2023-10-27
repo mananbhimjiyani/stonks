@@ -4,3 +4,4 @@ joblib
 yfinance
 nltk
 numpy
+gnews
