@@ -1,0 +1,7 @@
+flask
+pandas
+joblib
+real-time-sentiment  # Please specify the correct package name, replace 'real-time-sentiment' with the actual package name if different
+yfinance
+nltk
+numpy
