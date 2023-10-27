@@ -5,3 +5,4 @@ yfinance
 nltk
 numpy
 gnews
+python-dotenv
