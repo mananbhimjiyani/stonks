@@ -6,6 +6,7 @@ yfinance
 nltk
 numpy
 gnews
+gunicorn
 feedparser~=6.0.2
 bs4~=0.0.1
 beautifulsoup4~=4.9.3
